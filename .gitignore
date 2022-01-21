@@ -1,1 +1,4 @@
-node_modules
+frontend/admin-lte/node_modules
+frontend\admin-lte\.angular
+frontend/admin-lte/.vscode
+server/node_modules
