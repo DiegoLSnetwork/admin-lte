@@ -1,1 +1,124 @@
-<p>dashboard works!</p>
+<h1 class="mb-4 ms-4 mt-4">Dashboard</h1>
+
+
+<section class="content">
+    <div class=" container-fluid mb-3">
+        <div class="row">
+            <div class=" col-sm mb-4">
+                <mat-card class="bg-primary text-white pb-0">
+                    <mat-card-content>
+                        <div class="row">
+                            <div class="col-sm">
+                                <h2>150</h2>
+                                <p>New installations</p>
+                            </div>
+                            <div class="col-sm px-0 pt-4 icon-card-container" style="text-align: center;">
+                                <mat-icon aria-hidden="false" class="icon-card">calendar_today</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button mat-button style="width: 100%;">More info</button>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class=" col-sm mb-4">
+                <mat-card class="bg-success text-white pb-0">
+                    <mat-card-content>
+                        <div class="row">
+                            <div class="col-sm">
+                                <h2>150</h2>
+                                <p>New installations</p>
+                            </div>
+                            <div class="col-sm px-0 pt-4 icon-card-container" style="text-align: center;">
+                                <mat-icon aria-hidden="false" class="icon-card">calendar_today</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button mat-button style="width: 100%;">More info</button>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class=" col-sm mb-4">
+                <mat-card class="bg-warning text-white pb-0">
+                    <mat-card-content>
+                        <div class="row">
+                            <div class="col-sm">
+                                <h2>150</h2>
+                                <p>New installations</p>
+                            </div>
+                            <div class="col-sm px-0 pt-4 icon-card-container" style="text-align: center;">
+                                <mat-icon aria-hidden="false" class="icon-card">calendar_today</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button mat-button style="width: 100%;">More info</button>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class=" col-sm mb-4">
+                <mat-card class="bg-danger text-white pb-0">
+                    <mat-card-content>
+                        <div class="row">
+                            <div class="col-sm">
+                                <h2>150</h2>
+                                <p>New installations</p>
+                            </div>
+                            <div class="col-sm px-0 pt-4 icon-card-container" style="text-align: center;">
+                                <mat-icon aria-hidden="false" class="icon-card">calendar_today</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button mat-button style="width: 100%;">More info</button>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <section class="col-lg mb-3" style="min-width: 760px;">
+                <mat-card>
+                    <mat-card-header>
+                        <h3>
+                            <mat-icon aria-hidden="false" aria-label="Example home icon" class="me-2">analytics
+                            </mat-icon>Sales
+                        </h3>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div class="card pt-5" style="width: 700px;">
+                            <app-dashboard-chart></app-dashboard-chart>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </section>
+            <section class="col-md mb-3">
+                <mat-card>
+                    <mat-card-header>
+                        <h3>
+                            <mat-icon aria-hidden="false"  class="me-2">done</mat-icon>To
+                            Do List
+                        </h3>
+                    </mat-card-header>
+                    <mat-card-content class="mb-4">
+                        <app-dashboard-to-do-list></app-dashboard-to-do-list>
+                    </mat-card-content>
+                </mat-card>
+            </section>
+            <section class="col-md mb-3">
+                <mat-card>
+                    <mat-card-header>
+                        <h3>
+                            <mat-icon class="me-2">date_range</mat-icon>Calendar
+                        </h3>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <app-datepicker class="mx-auto"></app-datepicker>
+                    </mat-card-content>
+                </mat-card>
+            </section>
+        </div>
+    </div>
+
+</section>

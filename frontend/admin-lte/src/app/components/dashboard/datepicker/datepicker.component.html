@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-sm">
+        <ngb-datepicker #datepicker [(ngModel)]="dateModel" class="mx-auto"></ngb-datepicker>
+    </div>
+    <div class="col-sm">
+        <mat-form-field>
+            <input matInput type="text" placeholder="Event's name">
+        </mat-form-field>
+        <mat-form-field>
+            <textarea matInput name="" id="" placeholder="Description"></textarea>
+        </mat-form-field>
+        <ngb-timepicker [(ngModel)]="timeModel"></ngb-timepicker>
+        <button mat-raised-button color="primary">Create event</button>
+    </div>
+
+</div>

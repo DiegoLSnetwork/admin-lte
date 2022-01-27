@@ -1,4 +1,4 @@
-<mat-sidenav-container>
+<mat-sidenav-container style="height: 100%;">
     <mat-sidenav #sidenav mode="over">
         <button mat-button (click)="sidenav.toggle()">
             <span class="material-icons">menu</span>
@@ -7,7 +7,7 @@
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        Personal data
+                        Clients
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <p>sample</p>
@@ -15,14 +15,14 @@
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        Personal data
+                        Finances
                     </mat-panel-title>
                 </mat-expansion-panel-header>
-                <p>sample</p>
+                <a href=""><button>Client List</button></a>
             </mat-expansion-panel>
         </mat-accordion>
     </mat-sidenav>
-    <mat-sidenav-content>
+    <mat-sidenav-content class="sidenav-content">
         <mat-toolbar color="primary">
             <mat-toolbar-row>
                 <button mat-button (click)="sidenav.toggle()">

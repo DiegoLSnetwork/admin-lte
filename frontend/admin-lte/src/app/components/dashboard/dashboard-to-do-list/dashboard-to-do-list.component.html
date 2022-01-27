@@ -1,0 +1,44 @@
+<mat-list>
+    <mat-divider></mat-divider>
+    <mat-list-item style="height: auto;" class="my-2">
+        <div class="row mb-2">
+            <div class="col-md">
+                <mat-checkbox [disabled]="false" color="primary" class="mb-2">
+                    Make a To Do List
+                    <span class="badge bg-primary ms-3">3 days</span>
+                </mat-checkbox>
+                <button mat-raised-button class="mx-3">Options</button>
+                <button mat-raised-button color="warn">Delete</button>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+    </mat-list-item>
+    <mat-list-item style="height: auto;" class="my-2">
+        <div class="row mb-2">
+            <div class="col-md">
+                <mat-checkbox [disabled]="false" color="primary" class="mb-2">
+                    Make a To Do List
+                    <span class="badge bg-primary ms-3">3 days</span>
+                </mat-checkbox>
+                <button mat-raised-button class="mx-3">Options</button>
+                <button mat-raised-button color="warn">Delete</button>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+    </mat-list-item>
+</mat-list>
+<mat-list *ngFor="let task from tasks">
+    <mat-list-item style="height: auto;" class="my-2">
+        <div class="row mb-2">
+            <div class="col-md">
+                <mat-checkbox [disabled]="status" color="primary" class="mb-2">
+                    {{task.text}}
+                    <span class="badge bg-primary ms-3">{{task.date}}</span>
+                </mat-checkbox>
+                <button mat-raised-button class="mx-3">Options</button>
+                <button mat-raised-button color="warn">Delete</button>
+            </div>
+        </div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+</mat-list>

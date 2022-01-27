@@ -1,0 +1,10 @@
+.icon-card{
+    transform: scale(3) !important;
+    ;
+}
+@media screen and (max-width:575px) {
+    .icon-card-container{
+        height: 72px !important;
+    }
+    .icon-card{width: 48px !important;}
+}

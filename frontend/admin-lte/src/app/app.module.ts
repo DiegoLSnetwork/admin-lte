@@ -8,18 +8,37 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatButtonModule} from '@angular/material/button';
+import { MatCardModule } from "@angular/material/card";
+import {MatIconModule} from '@angular/material/icon';
+import { MatDividerModule } from "@angular/material/divider";
+import {MatListModule} from '@angular/material/list';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { FormsModule } from "@angular/forms";
+
+//Angular Bootstrap Modules
+import { NgbDatepickerModule, NgbModule, NgbTimepickerModule } from '@ng-bootstrap/ng-bootstrap';
+//NGX-Charts
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 //Components
-
 import { AppComponent } from './app.component';
-
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { DashboardChartComponent } from './components/dashboard/dashboard-chart/dashboard-chart.component';
+import { DashboardToDoListComponent } from './components/dashboard/dashboard-to-do-list/dashboard-to-do-list.component';
+import { DatepickerComponent } from './components/dashboard/datepicker/datepicker.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    DashboardComponent
+    DashboardComponent,
+    DashboardChartComponent,
+    DashboardToDoListComponent,
+    DatepickerComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +48,19 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     MatMenuModule,
     MatToolbarModule,
     MatExpansionModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    MatIconModule,
+    MatDividerModule,
+    MatListModule,
+    MatCheckboxModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    NgbModule,
+    NgbDatepickerModule,
+    NgbTimepickerModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
