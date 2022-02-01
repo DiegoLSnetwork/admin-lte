@@ -12,7 +12,7 @@ export class DatepickerComponent implements OnInit {
   timeModel={hour:0,minute:0};
 
   constructor(private calendar:NgbCalendar) { 
-    this.currentDate()
+    this.currentDate();
   }
 
   ngOnInit(): void {

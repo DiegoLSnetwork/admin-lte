@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model, SchemaTypes } = require("mongoose");
 
 const userSchema = new Schema({
     name: { type: String, required: true },
@@ -6,12 +6,15 @@ const userSchema = new Schema({
     ID: { type: Number, required: true },
     email: { type: String, default: "N/A" },
     address: { type: String, required: true },
-    city:{type:String, required:true},
-    neighborhood: { type: String, default: "N/A" },
+    city: { type: Schema.Types.ObjectId, ref: "City", required: true },
+    neighborhood: { type: Schema.Types.ObjectId, ref: "Neighborhood", default: "N/A" },
     phone: { type: Number, required: true },
-},{
-    timestamps:true,
-    versionKey:false
+    profile: { type: String, required: true },
+    tickets: [{ type: Schema.Types.ObjectId, ref: "Ticket", default: [] }],
+    invoices: [{ type: Schema.Types.ObjectId, ref: "Invoice", default: [] }]
+}, {
+    timestamps: true,
+    versionKey: false
 });
 
-module.exports=model("User",userSchema);
+module.exports = model("User", userSchema);

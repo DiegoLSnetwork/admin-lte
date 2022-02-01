@@ -7,18 +7,60 @@
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        Clients
+                        <i class="fas fa-users me-2 fa-lg pt-1"></i>Clients
                     </mat-panel-title>
                 </mat-expansion-panel-header>
-                <p>sample</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item px-0"><a href="/client_list"><button class="btn"><i class="fas fa-list me-2"></i>Client List</button></a></li>
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-calendar-alt me-2"></i>Installations</button></a></li>
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-chart-bar me-2"></i>Stats</button></a></li>
+                </ul>
             </mat-expansion-panel>
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        Finances
+                        <i class="fas fa-chart-line me-2 fa-lg pt-1"></i>Finances
                     </mat-panel-title>
                 </mat-expansion-panel-header>
-                <a href=""><button>Client List</button></a>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-money-bill-wave me-2"></i>Pending Payments</button></a></li>
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-file-invoice-dollar me-2"></i>Invoices</button></a></li>
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-cart-arrow-down me-2"></i>Expenses</button></a></li>
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-chart-bar me-2"></i>Stats</button></a></li>
+                </ul>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <i class="fas fa-life-ring me-2 fa-lg pt-1"></i>Support
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-ticket-alt me-2"></i>Ticket List</button></a></li>
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-chart-bar me-2"></i>Stats</button></a></li>
+                </ul>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <i class="fas fa-warehouse me-2 fa-lg pt-1"></i>Storage
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-boxes me-2"></i>Articles</button></a></li>
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-truck-loading me-2"></i>Vendors</button></a></li>
+                </ul>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <i class="fas fa-cogs me-2 fa-lg pt-1"></i>Settings
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-users-cog me-2"></i>Staff</button></a></li>
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-sign-out-alt me-2"></i>Log out</button></a></li>
+                </ul>
             </mat-expansion-panel>
         </mat-accordion>
     </mat-sidenav>
@@ -28,7 +70,7 @@
                 <button mat-button (click)="sidenav.toggle()">
                     <span class="material-icons">menu</span>
                 </button>
-              <span>Admin-LTE</span>
+                <a href="" style="text-decoration: none;color: white;"><span>Admin-LTE</span></a>
             </mat-toolbar-row>
         </mat-toolbar>
         <router-outlet></router-outlet>
