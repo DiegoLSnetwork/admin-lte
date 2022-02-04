@@ -6,6 +6,10 @@ const itemSchema = new Schema(
         description: { type: String, default: "" },
         price: { type: Number, required: true },
         quantity: { type: Number, required: true }
+    },
+    {
+        timestamps: true,
+        versionKey: false
     }
 );
 module.exports=model("Item",itemSchema);

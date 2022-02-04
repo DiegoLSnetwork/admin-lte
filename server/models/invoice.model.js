@@ -15,6 +15,9 @@ const invoiceModel = new Schema({
             value: 0
         }
     }]
+},{
+    timestamps: true,
+    versionKey: false
 });
 
 module.exports = model("Invoice", invoiceModel);

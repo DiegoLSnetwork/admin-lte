@@ -20,6 +20,9 @@ const profileSchema = new Schema(
             editInvoice: { type: Boolean, default: false },
             deleteInvoice: { type: Boolean, default: false }
         }
+    },{
+        timestamps: true,
+        versionKey: false
     }
 );
 module.exports = model("Profile", profileSchema);

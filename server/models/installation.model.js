@@ -9,6 +9,10 @@ const installationSchema = new Schema(
         phone: { type: Number, required: true },
         price: Number,
         comment: String
+    },
+    {
+        timestamps: true,
+        versionKey: false
     }
 );
 
