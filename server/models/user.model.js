@@ -6,10 +6,9 @@ const userSchema = new Schema({
     ID: { type: Number, required: true },
     email: { type: String, default: "N/A" },
     address: { type: String, required: true },
-    city: { type: Schema.Types.ObjectId, ref: "City", required: true },
-    neighborhood: { type: Schema.Types.ObjectId, ref: "Neighborhood", default: "N/A" },
+    city: {type:String, /*type: Schema.Types.ObjectId, ref: "City",*/ required: true },
+    neighborhood: {type:String, /*type: Schema.Types.ObjectId, ref: "Neighborhood",*/ default: "N/A" },
     phone: { type: Number, required: true },
-    profile: { type: String, required: true },
     tickets: [{ type: Schema.Types.ObjectId, ref: "Ticket", default: [] }],
     invoices: [{ type: Schema.Types.ObjectId, ref: "Invoice", default: [] }]
 }, {

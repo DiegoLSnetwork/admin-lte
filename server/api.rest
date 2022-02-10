@@ -1,0 +1,149 @@
+###
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/getOne
+Content-Type: application/x-www-form-urlencoded
+
+name=User
+
+###
+POST http://localhost:3000/users/create
+Content-Type: application/json
+
+{
+    "name":"User",
+    "lastName":"Username",
+    "ID":454662213,
+    "address":"ST 3 # 222",
+    "city":"Medellin",
+    "phone":3354611568,
+    "profile":"admin"
+}
+
+###
+DELETE http://localhost:3000/users/delete/6202c4894f6db4045502ae6e
+
+
+###
+PATCH http://localhost:3000/users/update/62013da4374ba0ab851da4d0
+Content-Type: application/json
+
+{
+    "email":"defalt@examp.com",
+    "address":"AV 4 # 626"
+}
+
+###
+POST http://localhost:3000/staff/create
+Content-Type: application/json
+
+{
+    "name":"Employ33",
+    "email":"employ33@employee.com",
+    "phone":645632683,
+    "profile":"admin"
+}
+
+###
+GET http://localhost:3000/staff/
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:3000/staff/update/6203e6920780721cc8e37f78
+Content-Type: application/json
+
+{
+    "name":"Defalt Employee",
+    "email":"defalt@examp.com"
+}
+
+###
+DELETE http://localhost:3000/staff/delete/6203e6920780721cc8e37f78
+
+###
+POST http://localhost:3000/tickets/create
+Content-Type: application/json
+
+{
+    "user":"62013da4374ba0ab851da4d0",
+    "description":"Example 2 tickets",
+    "status":"In progress",
+    "priority":"Low"
+}
+
+###
+GET http://localhost:3000/tickets
+
+###
+PATCH http://localhost:3000/tickets/update/6205205eb9962a97a1d41f2d
+Content-Type: application/json
+
+{
+    "description":"Sample Ticket 0000",
+    "status":"Finished",
+    "priority":"High"
+}
+
+###
+DELETE http://localhost:3000/tickets/delete/620529bfd89a9a8c35712e0c
+
+###
+POST http://localhost:3000/cities/create
+Content-Type: application/json
+
+{
+    "name":"Medellin"
+}
+
+###
+GET http://localhost:3000/cities
+
+###
+PATCH http://localhost:3000/cities/update/620536da62e089c1e6da7f60
+Content-Type: application/json
+
+{
+    "settings":{
+        "creationInvoice":{
+            "day":20,
+            "hours":11,
+            "minutes":11
+        }
+    }
+}
+
+###
+DELETE http://localhost:3000/cities/delete/6205374962e089c1e6da7f62
+
+###
+POST http://localhost:3000/installations/create
+Content-Type: application/json
+
+{
+    "startDate":"2022-03-15",
+    "endDate":"2022-03-16",
+    "name":"Edgar East",
+    "address":"AV 1 # 54-21",
+    "phone":54565686456
+}
+
+###
+PATCH http://localhost:3000/installations/update/62056e052e4123f99c71bc4a
+Content-Type: application/json
+
+{
+    "address":"St 2 #3s - 3",
+    "startDate":"2022-03-14"
+}
+
+###
+GET http://localhost:3000/installations
+
+###
+DELETE http://localhost:3000/installations/delete/62056e2e2e4123f99c71bc4c

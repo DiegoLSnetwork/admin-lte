@@ -7,8 +7,8 @@ const installationSchema = new Schema(
         name: { type: String, required: true },
         address: { type: String, required: true },
         phone: { type: Number, required: true },
-        price: Number,
-        comment: String
+        price: { type: Number, default: 0 },
+        comment: { type: String, default: "" }
     },
     {
         timestamps: true,

@@ -3,7 +3,6 @@ const { Schema, model } = require("mongoose");
 const citySchema = new Schema({
     name: { type: String, required: true },
     clientAmount: { type: Number, default: 0 },
-    lastModified: { type: Date, default: new Date() },
     settings: {
         sendEmail: { type: Boolean, default: true },
         creationInvoice: {
@@ -15,7 +14,7 @@ const citySchema = new Schema({
         notification: { type: Number, default: 20 },
         deferment: { type: Number, default: 30 }
     },
-    neighborhood: [{ type: Schema.Types.ObjectId, ref: "Neigborhood" }]
+    neighborhood: [{type: Schema.Types.ObjectId, ref: "Neigborhood", default:[]}]
 },
     {
         timestamps: true,
