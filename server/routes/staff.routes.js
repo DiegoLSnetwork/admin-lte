@@ -2,9 +2,14 @@ const { Router } = require("express");
 const router = Router();
 const staffControllers = require("../controllers/staff.controllers");
 
+
 //Routes
 
 router.get("/", staffControllers.getAll);
+
+
+router.post("/find", staffControllers.getOne);
+
 
 router.post("/create", staffControllers.createOne);
 

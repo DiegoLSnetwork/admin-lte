@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title style="width: auto;">SignIn</mat-card-title>
+    <form (submit)="signIn()">
+        <mat-form-field class="form-input" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="user.email" placeholder="Email" name="email" required autofocus>
+        </mat-form-field>
+        <mat-form-field class="form-input" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput [(ngModel)]="user.password" name="password" [type]="hide ? 'password' : 'text'" placeholder="Password" required autofocus>
+        </mat-form-field>
+        <mat-card-actions>
+            <div class="signin-button">
+                <button mat-raised-button color="primary" type="submit">Signin</button>
+            </div>
+        </mat-card-actions>
+    </form>
+    
+</mat-card>

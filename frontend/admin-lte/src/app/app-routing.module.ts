@@ -4,10 +4,13 @@ import { ClientsListComponent } from './components/clients-list/clients-list.com
 
 //components
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  {path: "", component: DashboardComponent}, 
-  {path: "client_list", component: ClientsListComponent}
+  {path:"", redirectTo:"/dashboard",pathMatch:"full"}, 
+  {path:"dashboard",component:DashboardComponent},
+  {path: "client_list", component: ClientsListComponent},
+  {path:"login",component:LoginComponent}
 ];
 
 @NgModule({

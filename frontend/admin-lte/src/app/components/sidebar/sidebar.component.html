@@ -1,8 +1,21 @@
 <mat-sidenav-container style="height: 100%;">
     <mat-sidenav #sidenav mode="over">
-        <button mat-button (click)="sidenav.toggle()">
-            <span class="material-icons">menu</span>
-        </button>
+        <div class="row">
+            <div class="col-3"><button mat-button (click)="sidenav.toggle()">
+                <span class="material-icons">menu</span>
+            </button></div>
+            
+            <div class="col">
+                <mat-card>
+                    <mat-card-header>
+                        <div mat-card-avatar class="header-image"></div>
+                        <mat-card-title>{{user.name}}</mat-card-title>
+                        <mat-card-subtitle>{{user.profile}}</mat-card-subtitle>
+                    </mat-card-header>
+                </mat-card>
+            </div>
+        </div>
+        
         <mat-accordion>
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
@@ -11,9 +24,22 @@
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0"><a href="/client_list"><button class="btn"><i class="fas fa-list me-2"></i>Client List</button></a></li>
-                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-calendar-alt me-2"></i>Installations</button></a></li>
-                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-chart-bar me-2"></i>Stats</button></a></li>
+                    <li class="list-group-item px-0">
+                        <a routerLink="/client_list">
+                            <button class="btn">
+                                <i class="fas fa-list me-2"></i>Client List
+                            </button>
+                        </a>
+                    </li>
+                    <li class="list-group-item px-0">
+                        <a href="">
+                            <button class="btn">
+                                <i class="fas fa-calendar-alt me-2"></i>Installations
+                            </button>
+                        </a>
+                    </li>
+                    <li class="list-group-item px-0"><a href=""><button class="btn"><i
+                                    class="fas fa-chart-bar me-2"></i>Stats</button></a></li>
                 </ul>
             </mat-expansion-panel>
             <mat-expansion-panel>
@@ -23,10 +49,33 @@
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-money-bill-wave me-2"></i>Pending Payments</button></a></li>
-                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-file-invoice-dollar me-2"></i>Invoices</button></a></li>
-                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-cart-arrow-down me-2"></i>Expenses</button></a></li>
-                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-chart-bar me-2"></i>Stats</button></a></li>
+                    <li class="list-group-item px-0"><a href="">
+                            <button class="btn">
+                                <i class="fas fa-money-bill-wave me-2"></i>
+                                Pending Payments
+                            </button>
+                        </a>
+                    </li>
+                    <li class="list-group-item px-0"><a href="">
+                            <button class="btn">
+                                <i class="fas fa-file-invoice-dollar me-2"></i>Invoices
+                            </button>
+                        </a>
+                    </li>
+                    <li class="list-group-item px-0">
+                        <a href="">
+                            <button class="btn">
+                                <i class="fas fa-cart-arrow-down me-2"></i>Expenses
+                            </button>
+                        </a>
+                    </li>
+                    <li class="list-group-item px-0">
+                        <a href="">
+                            <button class="btn">
+                                <i class="fas fa-chart-bar me-2"></i>Stats
+                            </button>
+                        </a>
+                    </li>
                 </ul>
             </mat-expansion-panel>
             <mat-expansion-panel>
@@ -36,8 +85,20 @@
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-ticket-alt me-2"></i>Ticket List</button></a></li>
-                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-chart-bar me-2"></i>Stats</button></a></li>
+                    <li class="list-group-item px-0">
+                        <a href="">
+                            <button class="btn">
+                                <i class="fas fa-ticket-alt me-2"></i>Ticket List
+                            </button>
+                        </a>
+                    </li>
+                    <li class="list-group-item px-0">
+                        <a href="">
+                            <button class="btn">
+                                <i class="fas fa-chart-bar me-2"></i>Stats
+                            </button>
+                        </a>
+                    </li>
                 </ul>
             </mat-expansion-panel>
             <mat-expansion-panel>
@@ -47,8 +108,20 @@
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-boxes me-2"></i>Articles</button></a></li>
-                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-truck-loading me-2"></i>Vendors</button></a></li>
+                    <li class="list-group-item px-0">
+                        <a href="">
+                            <button class="btn">
+                                <i class="fas fa-boxes me-2"></i>Articles
+                            </button>
+                        </a>
+                    </li>
+                    <li class="list-group-item px-0">
+                        <a href="">
+                            <button class="btn">
+                                <i class="fas fa-truck-loading me-2"></i>Vendors
+                            </button>
+                        </a>
+                    </li>
                 </ul>
             </mat-expansion-panel>
             <mat-expansion-panel>
@@ -58,8 +131,20 @@
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-users-cog me-2"></i>Staff</button></a></li>
-                    <li class="list-group-item px-0"><a href=""><button class="btn"><i class="fas fa-sign-out-alt me-2"></i>Log out</button></a></li>
+                    <li class="list-group-item px-0">
+                        <a href="">
+                            <button class="btn">
+                                <i class="fas fa-users-cog me-2"></i>Staff
+                            </button>
+                        </a>
+                    </li>
+                    <li class="list-group-item px-0">
+                        <a href="">
+                            <button class="btn">
+                                <i class="fas fa-sign-out-alt me-2"></i>Log out
+                            </button>
+                        </a>
+                    </li>
                 </ul>
             </mat-expansion-panel>
         </mat-accordion>
@@ -70,7 +155,21 @@
                 <button mat-button (click)="sidenav.toggle()">
                     <span class="material-icons">menu</span>
                 </button>
-                <a href="" style="text-decoration: none;color: white;"><span>Admin-LTE</span></a>
+                <div class="container">
+                    <div class="row row-cols-2">
+                        <div class="col-11 ">
+                            <a routerLink="/" style="text-decoration: none;color: white;"><span>Admin-LTE</span></a>
+                        </div>
+                        <div class="col-1">
+                            <a routerLink="/login" style="text-decoration: none;color: white;">
+                                <button mat-flat-button color="primary" class="ml-3">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    Log Out
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </mat-toolbar-row>
         </mat-toolbar>
         <router-outlet></router-outlet>

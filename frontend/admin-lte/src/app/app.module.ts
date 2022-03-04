@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from "@angular/common/http";
 //Angular Material Modules
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
@@ -17,6 +18,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatSelectModule } from "@angular/material/select";
 import { MatTableModule } from "@angular/material/table";
+import { MatTabsModule } from "@angular/material/tabs";
 import { FormsModule } from "@angular/forms";
 
 //Angular Bootstrap Modules
@@ -32,6 +34,7 @@ import { DashboardToDoListComponent } from './components/dashboard/dashboard-to-
 import { DatepickerComponent } from './components/dashboard/datepicker/datepicker.component';
 import { ClientsListComponent } from './components/clients-list/clients-list.component';
 import { ClientTableComponent } from './components/clients-list/client-table/client-table.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -44,12 +47,14 @@ import { ClientTableComponent } from './components/clients-list/client-table/cli
     DashboardToDoListComponent,
     DatepickerComponent,
     ClientsListComponent,
-    ClientTableComponent
+    ClientTableComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatSidenavModule,
     MatMenuModule,
     MatToolbarModule,
@@ -64,6 +69,7 @@ import { ClientTableComponent } from './components/clients-list/client-table/cli
     MatFormFieldModule,
     MatSelectModule,
     MatTableModule,
+    MatTabsModule,
     FormsModule,
     NgbModule,
     NgbDatepickerModule,

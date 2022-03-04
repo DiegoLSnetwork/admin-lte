@@ -43,8 +43,9 @@ POST http://localhost:3000/staff/create
 Content-Type: application/json
 
 {
-    "name":"Employ33",
-    "email":"employ33@employee.com",
+    "name":"Admin3",
+    "password":"admin",
+    "email":"admin3@employee.com",
     "phone":645632683,
     "profile":"admin"
 }
@@ -52,6 +53,15 @@ Content-Type: application/json
 ###
 GET http://localhost:3000/staff/
 Content-Type: application/json
+
+###
+POST http://localhost:3000/staff/find
+Content-Type: application/json
+
+{
+    "email":"admin3@employee.com",
+    "password":"admin"
+}
 
 ###
 
@@ -147,3 +157,12 @@ GET http://localhost:3000/installations
 
 ###
 DELETE http://localhost:3000/installations/delete/62056e2e2e4123f99c71bc4c
+
+###
+GET  http://localhost:3000
+Content-Type: application/json
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBiZjlhM2JjOTM0YjQxYWI2OThmZjciLCJpYXQiOjE2NDUyMTE4ODh9.nUvlfFu3Ai7133jSFQ9cIJvlmqm8pS-hDAGX28dMnEI
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBiZjlhM2JjOTM0YjQxYWI2OThmZjciLCJpYXQiOjE2NDUyMTE4ODh9.nUvlfFu3Ai7133jSFQ9cIJvlmqm8pS-hDAGX28dMnEI"
+}
